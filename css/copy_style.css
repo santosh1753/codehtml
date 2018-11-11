@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+.header-section {
+    z-index: 999;
+    box-shadow: 0 1px 9px 0px #8f8f8f;
+    width: 100%;
+    padding: 10px 0;
+}
+.logo{
+	display:table;
+	margin: 0 auto;
+}
+.logo img {
+    width: 130px;
+    transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+}
+#time{
+	text-align:center;
+}
+.panel-header h4{
+	margin:0;
+}
+.panel-header {
+    padding: 10px 10px;
+    background: #f1f1f1;
+}
+.tally-panel {
+    margin: 30px auto;
+    border: 1px solid #f1f1f1;
+    width: 50%;
+}
+.panel-content{
+	padding:15px;
+}
+.status-table table{
+	width:100%;
+}
+.status-table table thead{
+	    background: #0EB8A1;
+    color: #fff;
+}
+.status-table table th{
+	    padding: 5px 10px;
+}
+.status-table table  td{
+	padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+.filter{
+	border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+	padding:20px 0;
+}
+.success {
+    background: url(../images/);
+    width: 21px;
+    height: 21px;
+    float: right;
+    background-size: 21px;
+}
+.failure {
+    background: url(../images/);
+    width: 21px;
+    height: 21px;
+    float: right;
+    background-size: 21px;
+}
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+@media (max-width: 768px) { .tally-panel { width: 80%; }	}
